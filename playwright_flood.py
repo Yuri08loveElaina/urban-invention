@@ -4,10 +4,10 @@ import time
 import os
 from playwright.async_api import async_playwright
 
-TARGET_URL = os.getenv("TARGET_URL", "https://example.com/")
+TARGET_URL = os.getenv("TARGET_URL", "https://hackerone.com/")
 DURATION = int(os.getenv("DURATION", "20"))   # giây
-CONCURRENCY = int(os.getenv("CONCURRENCY", "30"))  # số tab song song
-REQ_PER_LOOP = int(os.getenv("REQ_PER_LOOP", "5"))  # số request song song mỗi vòng/tab
+CONCURRENCY = int(os.getenv("CONCURRENCY", "300"))  # số tab song song
+REQ_PER_LOOP = int(os.getenv("REQ_PER_LOOP", "500"))  # số request song song mỗi vòng/tab
 
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/116.0 Safari/537.36",
